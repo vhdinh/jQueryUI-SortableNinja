@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Assignment Sortable Ninja</title>
+	<meta name="description" content="Coding Dojo jQueryUI Sortable Ninja">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  	<script type="text/javascript">
+  		$(function(){
+  			$("#sort").sortable({
+  				placeholder: "ui-state-hightlight"
+  			});
+  			$("#sort").disableSelection();
+  		})
+  	</script>
+  	<style type="text/css">
+  		* {
+  			margin: 0px;
+  			padding: 0px;
+  		}
+  		#container {
+  			padding: 25px;
+  		}
+  		img {
+  			display: block;
+  			width: 200px;
+  			margin: 5px;
+  		}
+  	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sort">
+			<img class="ui-state-default" src="sort1.png" alt="sort1 image">
+			<img class="ui-state-default" src="sort2.png" alt="sort2 image">
+			<img class="ui-state-default" src="sort3.png" alt="sort3 image">
+			<img class="ui-state-default" src="sort4.png" alt="sort4 image">
+			<img class="ui-state-default" src="sort5.png" alt="sort5 image">
+		</div>
+	</div>
+</body>
+</html>
